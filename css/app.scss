@@ -64,6 +64,7 @@
     body {
         font-family: 'poppins-light', sans-serif;
         background-color: grey;
+       
     }
 
     //   navbar css
@@ -183,7 +184,19 @@
     //another
 
     .another{
-        background:darken(#770015 , 7%)
+        background:darken(#770015 , 7%);
+        border-top:3px solid $white;
+        border-bottom:3px solid $white;
+        .gallery{
+            
+        //    @media(max-width:650px){
+        //     overflow-x: hidden;
+        //     overflow-y: auto;
+        //    }
+            img{
+                border:4px double $white; 
+            }
+        }
     }
 
 
@@ -208,22 +221,21 @@
 
     .slick-next {
         height: 35px !important;
-        width: 35px !important;
-        background: $primary;
+        width: 35px !important; 
 
-        &:hover {
-            background: $secondary;
-        }
+        // &:hover {
+        //     background: $secondary;
+        // }
     }
+ 
 
     .slick-prev {
         height: 35px !important;
-        width: 35px !important;
-        background: $primary;
+        width: 35px !important; 
 
-        &:hover {
-            background: $secondary;
-        }
+        // &:hover {
+        //     background: $secondary;
+        // }
     }
 
     .slick-dots li button {
