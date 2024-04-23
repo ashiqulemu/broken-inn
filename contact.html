@@ -15,17 +15,17 @@
     <meta property='og:image:height' content='627' />
     <meta property="og:type" content='website' />
     <title>Broken-Inn</title>
-    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
     <link rel="icon" href="./images/favi.png">
 
     <!-- css -->
     <link href="./css/bootstrap-5.2.3.min.css" rel="stylesheet">
-    <link href="./css/app.css" rel="stylesheet"> 
+    <link href="./css/app.css" rel="stylesheet">
 
     <!-- slick css -->
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" /> 
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
 
     <!-- iconify icon -->
     <script src="./js/iconify.min.js"></script>
@@ -33,13 +33,14 @@
 
 <body>
 
+
     <!-- site header start -->
     <header class="site-header sticky-top">
         <section class="container">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="./images/logo.png" width="190px" alt="logo">
+                        <img src="./images/logo.png" class="d-block d-lg-none " width="190px" alt="logo">
                     </a>
                     <button class="navbar-toggler border border-2" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -48,9 +49,9 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navCustom">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navCustom align-items-lg-center">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/index.html">home</a>
+                                <a class="nav-link active" aria-current="page" href="/index.html">home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about.html">about
@@ -60,22 +61,13 @@
                                 <a class="nav-link" href="eat.html">EAT
                                 </a>
                             </li>
-                            <!-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li> -->
                             <li class="nav-item">
                                 <a href="drink.html" class="nav-link">DRINK
+                                </a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block">
+                                <a href="./index.html" class="nav-link">
+                                    <img src="./images/logo.png" width="190px" alt="logo">
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -90,8 +82,8 @@
                                 <a href="niskaunity.html" class="nav-link">NISKAUNITY
                                 </a>
                             </li>
-                            <li class="nav-item ">
-                                <a href="contact.html" class="nav-link active">CONTACT
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">CONTACT
                                 </a>
                             </li>
 
@@ -106,13 +98,43 @@
 
 
 
-   
+
     <section class="another py-5 ">
         <div class="container">
             <div class="row">
                 <h1 class="text-center text-light mb-0 taylor-bold">CONTACT</h1>
             </div>
-           
+
+        </div>
+    </section>
+
+
+    <section class="contact py-5">
+        <div class="container">
+            <div class="row col-lg-10 mx-auto py-4 " style="background-color: #E6E6E6;">
+                <h1 class="mb-0  text-center taylor-bold py-3 txt-primary   ">SEND US A MESSAGE</h1>
+                <div class="row mx-auto">
+                    <div class="col-lg-6 mb-4">
+                        <input name="fname" class="form-control  py-3 border-0 rounded-0" id="fname" type="text"
+                            placeholder="Enter your first name*" required="required">
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <input name="lname" class="form-control  py-3 border-0 rounded-0" id="lname" type="text" placeholder="Enter your last name*" required="required">
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <input name="email" class="form-control  py-3 border-0 rounded-0" id="email" type="email" placeholder="Enter your email*" required="required">
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <input name="hometown" class="form-control  py-3 border-0 rounded-0" id="hometown" type="text" placeholder="Enter your Hometown">
+                    </div>
+                    <div class="col-lg-12 mb-4">
+                        <textarea name="comment" class="form-control  py-3 border-0 rounded-0" id="comment" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="col-lg-12 mb-4 text-center ">
+                       <button class="btn-rounded border-0">submit</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -123,31 +145,31 @@
             <div class="pt-5">
                 <div class="row">
                     <div class=" col-12 col-sm-12 col-md-6 col-lg-4 mb-3 text-center text-md-start">
-                        <h3  class="taylor-bold">THE BROKEN INN   </h3>
+                        <h3 class="taylor-bold">THE BROKEN INN </h3>
                         <h5> 2209 NOTT STREET <br>
-                            NISKAYUNA, NY 12309 
-                          </h5>
-                      
+                            NISKAYUNA, NY 12309
+                        </h5>
+
                         <hr>
                         <p>
-                            <h5 class="taylor-bold">CALL US: <b>518-469-5622</b></h5>
-                            <small>
-                                Note - We don't take reservations, just stop on in!
-                            </small>
+                        <h5 class="taylor-bold">CALL US: <b>518-469-5622</b></h5>
+                        <small>
+                            Note - We don't take reservations, just stop on in!
+                        </small>
                         </p>
                         <p>
-                           <h5 class="taylor-bold">EMAIL US: <b>INFO@BROKEN-INN.COM</b></h5> 
-                            <small>
-                                Note: We are located in a residential neighborhood. Please park in front of our building
-                                or in
-                                the parking lot across the street and not on someone's front lawn. Thanks!
-                            </small>
+                        <h5 class="taylor-bold">EMAIL US: <b>INFO@BROKEN-INN.COM</b></h5>
+                        <small>
+                            Note: We are located in a residential neighborhood. Please park in front of our building
+                            or in
+                            the parking lot across the street and not on someone's front lawn. Thanks!
+                        </small>
                         </p>
                     </div>
 
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4  mb-3">
-                        
-                            <!-- <h3 class="text-center taylor-bold">
+
+                        <!-- <h3 class="text-center taylor-bold">
                                 HOURS OF OPERATION
                             </h3>
                             <div class="row mb-3">
@@ -167,10 +189,10 @@
                                     </div>
                                 </div> 
                             </div> -->
-                            <iframe
+                        <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5853.390937835827!2d-73.894214!3d42.815921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de6d9f305b94cf%3A0xcc60e3ea0a0ad0ee!2s2209%20Nott%20St%2C%20Schenectady%2C%20NY%2012309%2C%20USA!5e0!3m2!1sen!2sbd!4v1713272569694!5m2!1sen!2sbd"
-                            class="rounded-4 opacity-75" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            class="rounded-4 opacity-75" width="100%" height="250" style="border:0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4  mb-3 text-center text-md-start">
                         <form>
@@ -189,7 +211,8 @@
 
                 <div
                     class="d-flex flex-column flex-sm-row justify-content-center align-items-center  justify-content-md-between pt-4  border-top">
-                    <p>Broken Inn © 2022. Powered by <a href="http://www.milesimage.com/" class="text-underline">MilesImage</a>
+                    <p>Broken Inn © 2022. Powered by <a href="http://www.milesimage.com/"
+                            class="text-underline">MilesImage</a>
                     </p>
                     <ul class="list-unstyled d-flex align-items-center">
                         <li class="mx-1">
@@ -218,11 +241,11 @@
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script> 
+    </script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <script type="text/javascript">
 
-        $(document).ready(function () { 
+        $(document).ready(function () {
 
             // gallery
 
@@ -281,7 +304,7 @@
         });
 
 
-    
+
 
 
     </script>

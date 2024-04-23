@@ -174,8 +174,7 @@ body {
 }
 .site-header .navCustom .nav-item .nav-link:hover {
   font-weight: bold;
-  color: #6D0013 !important;
-  background-color: #fff;
+  color: #fff;
 }
 .site-header .navCustom .nav-item .nav-link.active {
   color: #6D0013 !important;
@@ -266,6 +265,83 @@ body {
   }
 }
 
+.volunteer-list .box-container {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 50px 5px;
+}
+
+.volunteer-list .box-container .items {
+  width: 100%;
+  background: #242424;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  transition: all 0.4s ease;
+  border: 1px solid #ff0013;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+.volunteer-list .box-container .items:hover .bottom {
+  background: #fff;
+}
+.volunteer-list .box-container .items:hover .bottom .decription {
+  color: #000 !important;
+}
+
+.volunteer-list .box-container .items .item-box img {
+  height: 330px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border: 4px solid red;
+}
+
+.volunteer-list .box-container .items .bottom {
+  padding: 20px 15px;
+  height: 100%;
+  transition: all 0.4s ease;
+  background: black;
+}
+
+.volunteer-list .box-container .items .bottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.volunteer-list .box-container .items .bottom .title {
+  font-size: 2.2rem;
+  color: red;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.volunteer-list .box-container .items .bottom .decription {
+  font-size: 1.7rem;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.volunteer-list .box-container .items a {
+  height: 100%;
+  display: flex;
+}
+
+.volunteer-list .box-container .items .item-box {
+  height: 330px;
+  overflow: hidden;
+  flex: 2;
+}
+
+@media (max-width: 992px) {
+  .volunteer-list .box-container .items a {
+    flex-direction: column;
+  }
+}
 .another {
   background: #53000f;
   border-top: 1px solid #fff;
@@ -344,4 +420,27 @@ footer a {
 .btn-theme:hover {
   background: #fff;
   color: #6D0013 !important;
+}
+
+.contact {
+  background: url(../images/ban3.jpg);
+  background-size: 100% 100%;
+}
+.contact .form-control {
+  font-family: ui-sans-serif;
+  font-style: italic;
+  border: 1px solid transparent !important;
+}
+.contact .form-control:focus {
+  border: 1px solid #6D0014 !important;
+  box-shadow: none;
+}
+.contact textarea {
+  font-family: ui-sans-serif;
+  font-style: italic;
+  border: 1px solid transparent !important;
+}
+.contact textarea:focus {
+  border: 1px solid #6D0014 !important;
+  box-shadow: none;
 }/*# sourceMappingURL=app.css.map */
