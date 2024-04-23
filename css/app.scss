@@ -77,8 +77,7 @@
 
 
     body {
-        font-family: "taylor-light" ;
-        background-color: grey;
+        font-family: "taylor-light" ; 
        
     }
 
@@ -227,6 +226,15 @@
         }
     }
 
+    .about-gallery{
+        img{
+            border: 5px double #4c4c4c;
+            filter: grayscale(1); 
+             &:hover{
+                filter: unset;
+             }
+        }
+    }
 
     // site Footer 
 

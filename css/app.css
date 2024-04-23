@@ -59,7 +59,6 @@ a {
 
 body {
   font-family: "taylor-light";
-  background-color: grey;
 }
 
 .list-icon li {
@@ -170,6 +169,14 @@ body {
 }
 .another .gallery img {
   border: 4px double #fff;
+}
+
+.about-gallery img {
+  border: 5px double #4c4c4c;
+  filter: grayscale(1);
+}
+.about-gallery img:hover {
+  filter: unset;
 }
 
 footer {
