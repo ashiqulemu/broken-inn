@@ -5,12 +5,16 @@
 }
 
 @font-face {
+  font-family: "Essai";
+  src: url("../fonts/Essai.ttf");
+}
+@font-face {
   font-family: "taylor-light";
   src: url("../fonts/TaylorLight.woff");
 }
 @font-face {
   font-family: "taylor-bold";
-  src: url("../fonts/TaylorBold.woff");
+  src: url("../fonts/TaylorBold.ttf");
 }
 .text-justify {
   text-align: justify;
@@ -18,6 +22,7 @@
 
 .taylor-bold {
   font-family: "taylor-bold";
+  font-weight: 700;
 }
 
 .bg-light-theme {
@@ -40,6 +45,10 @@ a {
   color: #1E3A58 !important;
 }
 
+.font-essai {
+  font-family: "Essai";
+}
+
 .bg-primary-theme {
   background: #6D0013 !important;
 }
@@ -59,6 +68,74 @@ a {
 
 body {
   font-family: "taylor-light";
+}
+
+.view-map {
+  background: #3eb900;
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.order-title {
+  color: #640813 !important;
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.inner-order {
+  background: #640813 !important;
+  padding: 35px;
+}
+
+.inner-order form .form-group .form-control::-moz-placeholder {
+  color: #640813 !important;
+}
+
+.inner-order form .form-group .form-control::placeholder {
+  color: #640813 !important;
+}
+
+.inner-order form .form-group .form-control:focus {
+  box-shadow: none;
+}
+
+.btn-submit {
+  padding: 11px;
+  border-radius: 42px;
+  color: #640813 !important;
+  text-align: center;
+  display: inline-block;
+  border: 0;
+  width: 151px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-family: "essai";
+}
+
+.btn-submit:hover {
+  background: #870c1b !important;
+  color: #fff !important;
+}
+
+.inner-order form input[type=checkbox] {
+  height: 25px;
+  width: 25px;
+  margin-right: 7px;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+.inner-order form label {
+  cursor: pointer;
+}
+
+.help {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "essai";
 }
 
 .list-icon li {
@@ -114,6 +191,10 @@ body {
   color: #fff;
 }
 
+.form-control {
+  font-family: "essai";
+}
+
 .btn-rounded {
   color: #000;
   font-size: 13px;
@@ -127,6 +208,14 @@ body {
 }
 .btn-rounded:hover {
   color: #6D0013 !important;
+}
+.btn-rounded.bg-primary {
+  background: #6D0013 !important;
+  color: #fff !important;
+}
+.btn-rounded.bg-primary:hover {
+  color: #fff !important;
+  box-shadow: 0 10px 15px #efbdad;
 }
 
 .banner-section {
