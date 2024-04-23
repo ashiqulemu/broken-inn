@@ -11,6 +11,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+       
     }
 
 
@@ -22,11 +23,20 @@
 
     @font-face {
         font-family: "taylor-bold";
-        src: url('../fonts/TaylorBold.ttf');
+        src: url('../fonts/TaylorBold.woff');
+    }
+
+
+    .text-justify{
+        text-align: justify;
     }
 
     .taylor-bold{
         font-family: "taylor-bold";
+    }
+
+    .bg-light-theme{
+        background: #E6E6E6;
     }
 
 
@@ -48,7 +58,7 @@
         color: $ternary;
     }
 
-    .bg-priamry {
+    .bg-primary-theme {
         background: $primary;
     }
 
@@ -60,18 +70,35 @@
         background: $ternary;
     }
 
+    .theme-para{
+        font-size: 17px;
+        line-height: 28px;
+    }
+
 
     body {
-        font-family: 'poppins-light', sans-serif;
+        font-family: "taylor-light" ;
         background-color: grey;
        
+    }
+
+    .list-icon{
+        li{
+            list-style-image: url(../images/checkmark.png);
+            span{
+                position: relative;
+                top: -6px;
+                color: $primary;
+                font-weight: bold;
+            }
+        }
     }
 
     //   navbar css
 
     .site-header {
         background: $primary;
-        border-bottom: 3px solid $white;
+        border-bottom: 2px solid $white;
         .navbar-brand {
             img {
                 @media(max-width:375px) {
@@ -186,7 +213,7 @@
 
     .another{
         background:darken(#770015 , 7%);
-        border-top:3px solid $white;
+        border-top:1px solid $white;
         border-bottom:3px solid $white;
         .gallery{
             
@@ -207,6 +234,7 @@
         background: $primary;
         font-family: "taylor-light";
         color: $white;
+        border-top: 2px solid #fff;
 
         a {
             color: $white!important;

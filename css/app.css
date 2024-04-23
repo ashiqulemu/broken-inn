@@ -10,10 +10,18 @@
 }
 @font-face {
   font-family: "taylor-bold";
-  src: url("../fonts/TaylorBold.ttf");
+  src: url("../fonts/TaylorBold.woff");
 }
+.text-justify {
+  text-align: justify;
+}
+
 .taylor-bold {
   font-family: "taylor-bold";
+}
+
+.bg-light-theme {
+  background: #E6E6E6;
 }
 
 a {
@@ -32,7 +40,7 @@ a {
   color: #1E3A58 !important;
 }
 
-.bg-priamry {
+.bg-primary-theme {
   background: #6D0014 !important;
 }
 
@@ -44,14 +52,29 @@ a {
   background: #1E3A58 !important;
 }
 
+.theme-para {
+  font-size: 17px;
+  line-height: 28px;
+}
+
 body {
-  font-family: "poppins-light", sans-serif;
+  font-family: "taylor-light";
   background-color: grey;
+}
+
+.list-icon li {
+  list-style-image: url(../images/checkmark.png);
+}
+.list-icon li span {
+  position: relative;
+  top: -6px;
+  color: #6D0014 !important;
+  font-weight: bold;
 }
 
 .site-header {
   background: #6D0014 !important;
-  border-bottom: 3px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 @media (max-width: 375px) {
   .site-header .navbar-brand img {
@@ -142,7 +165,7 @@ body {
 
 .another {
   background: #53000f;
-  border-top: 3px solid #fff;
+  border-top: 1px solid #fff;
   border-bottom: 3px solid #fff;
 }
 .another .gallery img {
@@ -153,6 +176,7 @@ footer {
   background: #6D0014 !important;
   font-family: "taylor-light";
   color: #fff;
+  border-top: 2px solid #fff;
 }
 footer a {
   color: #fff !important;
