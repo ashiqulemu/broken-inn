@@ -29,7 +29,7 @@ a {
 }
 
 .txt-primary {
-  color: #6D0014 !important !important;
+  color: #6D0013 !important !important;
 }
 
 .txt-secondary {
@@ -41,7 +41,7 @@ a {
 }
 
 .bg-primary-theme {
-  background: #6D0014 !important;
+  background: #6D0013 !important;
 }
 
 .bg-secondary {
@@ -67,12 +67,12 @@ body {
 .list-icon li span {
   position: relative;
   top: -6px;
-  color: #6D0014 !important;
+  color: #6D0013 !important;
   font-weight: bold;
 }
 
 .site-header {
-  background: #6D0014 !important;
+  background: #6D0013 !important;
   border-bottom: 2px solid #fff;
 }
 @media (max-width: 375px) {
@@ -97,21 +97,36 @@ body {
 }
 .site-header .navCustom .nav-item .nav-link:hover {
   font-weight: bold;
-  color: #6D0014 !important;
+  color: #6D0013 !important;
   background-color: #fff;
 }
 .site-header .navCustom .nav-item .nav-link.active {
-  color: #6D0014 !important;
+  color: #6D0013 !important;
   font-weight: bold;
   background-color: #fff;
 }
 .site-header .navCustom .nav-item .dropdown-item:hover {
-  background-color: #6D0014 !important;
+  background-color: #6D0013 !important;
   color: #fff;
 }
 .site-header .navCustom .nav-item .dropdown-item.active {
-  background-color: #6D0014 !important;
+  background-color: #6D0013 !important;
   color: #fff;
+}
+
+.btn-rounded {
+  color: #000;
+  font-size: 13px;
+  font-family: montserrat, sans-serif;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  letter-spacing: 1px;
+  background: #fff;
+  font-weight: 700;
+  border-radius: 25px;
+}
+.btn-rounded:hover {
+  color: #6D0013 !important;
 }
 
 .banner-section {
@@ -180,7 +195,7 @@ body {
 }
 
 footer {
-  background: #6D0014 !important;
+  background: #6D0013 !important;
   font-family: "taylor-light";
   color: #fff;
   border-top: 2px solid #fff;
@@ -211,7 +226,7 @@ footer a {
 }
 
 .slick-dots li.slick-active button {
-  background: #6D0014 !important;
+  background: #6D0013 !important;
 }
 
 .carousel-indicators {
@@ -239,5 +254,5 @@ footer a {
 }
 .btn-theme:hover {
   background: #fff;
-  color: #6D0014 !important;
+  color: #6D0013 !important;
 }/*# sourceMappingURL=app.css.map */

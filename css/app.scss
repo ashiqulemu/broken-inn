@@ -1,7 +1,7 @@
     // variables
 
 
-    $primary: #6D0014 !important;
+    $primary: #6D0013 !important;
     $secondary: #1E3A58 !important;
     $ternary: #1E3A58 !important;
     $white: #fff;
@@ -11,7 +11,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-       
+
     }
 
 
@@ -27,15 +27,15 @@
     }
 
 
-    .text-justify{
+    .text-justify {
         text-align: justify;
     }
 
-    .taylor-bold{
+    .taylor-bold {
         font-family: "taylor-bold";
     }
 
-    .bg-light-theme{
+    .bg-light-theme {
         background: #E6E6E6;
     }
 
@@ -70,21 +70,22 @@
         background: $ternary;
     }
 
-    .theme-para{
+    .theme-para {
         font-size: 17px;
         line-height: 28px;
     }
 
 
     body {
-        font-family: "taylor-light" ; 
-       
+        font-family: "taylor-light";
+
     }
 
-    .list-icon{
-        li{
+    .list-icon {
+        li {
             list-style-image: url(../images/checkmark.png);
-            span{
+
+            span {
                 position: relative;
                 top: -6px;
                 color: $primary;
@@ -98,6 +99,7 @@
     .site-header {
         background: $primary;
         border-bottom: 2px solid $white;
+
         .navbar-brand {
             img {
                 @media(max-width:375px) {
@@ -117,6 +119,7 @@
                     text-transform: uppercase;
                     font-family: "taylor-light";
                     border-radius: 5px;
+
                     @media(max-width:1024px) {
                         font-size: 14px;
                     }
@@ -131,7 +134,7 @@
                         color: $primary;
                         font-weight: bold;
                         background-color: $white;
-                       
+
                     }
                 }
 
@@ -149,6 +152,26 @@
 
 
             }
+        }
+    }
+
+
+    .btn-rounded {
+        color: #000;
+        font-size: 13px;
+        font-family: montserrat, sans-serif;
+        text-transform: uppercase;
+        padding: 15px 40px;
+        letter-spacing: 1px;
+        background: #fff;
+        font-weight: 700;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        border-radius: 25px;
+
+        &:hover {
+            color: $primary;
         }
     }
 
@@ -210,29 +233,31 @@
 
     //another
 
-    .another{
-        background:darken(#770015 , 7%);
-        border-top:1px solid $white;
-        border-bottom:3px solid $white;
-        .gallery{
-            
-        //    @media(max-width:650px){
-        //     overflow-x: hidden;
-        //     overflow-y: auto;
-        //    }
-            img{
-                border:4px double $white; 
+    .another {
+        background: darken(#770015, 7%);
+        border-top: 1px solid $white;
+        border-bottom: 3px solid $white;
+
+        .gallery {
+
+            //    @media(max-width:650px){
+            //     overflow-x: hidden;
+            //     overflow-y: auto;
+            //    }
+            img {
+                border: 4px double $white;
             }
         }
     }
 
-    .about-gallery{
-        img{
+    .about-gallery {
+        img {
             border: 5px double #4c4c4c;
-            filter: grayscale(1); 
-             &:hover{
+            filter: grayscale(1);
+
+            &:hover {
                 filter: unset;
-             }
+            }
         }
     }
 
@@ -245,7 +270,7 @@
         border-top: 2px solid #fff;
 
         a {
-            color: $white!important;
+            color: $white !important;
         }
     }
 
@@ -258,17 +283,17 @@
 
     .slick-next {
         height: 35px !important;
-        width: 35px !important; 
+        width: 35px !important;
 
         // &:hover {
         //     background: $secondary;
         // }
     }
- 
+
 
     .slick-prev {
         height: 35px !important;
-        width: 35px !important; 
+        width: 35px !important;
 
         // &:hover {
         //     background: $secondary;
@@ -312,8 +337,8 @@
         font-size: 13px;
         text-transform: uppercase;
         font-weight: 400;
-        color: $white; 
-        padding: 7px 18px; 
+        color: $white;
+        padding: 7px 18px;
         -webkit-transition: all 0.3s ease-in;
         -webkit-transition: 0.3s ease-in;
         -webkit-transition: 0.2s ease-in;
@@ -326,7 +351,7 @@
         font-weight: bold;
 
         &:hover {
-            background: $white; 
+            background: $white;
             color: $primary;
         }
     }
