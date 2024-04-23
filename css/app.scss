@@ -253,7 +253,7 @@
 
         &:hover {
             color: $primary;
-           
+
         }
 
         &.bg-primary {
@@ -266,6 +266,36 @@
             }
         }
 
+
+    }
+
+
+    .time-block {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-family: ui-rounded;
+
+        .items {
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+
+            &:nth-child(3) {
+                text-align: right;
+                @media(max-width:650px) {
+                    flex:2;
+                    text-align: right;
+                }
+            }
+
+            &:nth-child(2) {
+                @media(max-width:650px) {
+                    flex-basis: 108px;
+                    overflow-x: hidden;
+                }
+            }
+        }
 
     }
 
@@ -542,21 +572,24 @@
         background: url(../images/ban3.jpg);
         background-size: 100% 100%;
 
-        .form-control{
+        .form-control {
             font-family: ui-sans-serif;
             font-style: italic;
-            border: 1px solid transparent!important;
-            &:focus{
-                border: 1px solid #6D0014!important;
+            border: 1px solid transparent !important;
+
+            &:focus {
+                border: 1px solid #6D0014 !important;
                 box-shadow: none;
             }
         }
-        textarea{
+
+        textarea {
             font-family: ui-sans-serif;
             font-style: italic;
-            border: 1px solid transparent!important;
-            &:focus{
-                border: 1px solid #6D0014!important;
+            border: 1px solid transparent !important;
+
+            &:focus {
+                border: 1px solid #6D0014 !important;
                 box-shadow: none;
             }
         }

@@ -217,6 +217,33 @@ body {
   box-shadow: 0 10px 15px #efbdad;
 }
 
+.time-block {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-family: ui-rounded;
+}
+.time-block .items {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+}
+.time-block .items:nth-child(3) {
+  text-align: right;
+}
+@media (max-width: 650px) {
+  .time-block .items:nth-child(3) {
+    flex: 2;
+    text-align: right;
+  }
+}
+@media (max-width: 650px) {
+  .time-block .items:nth-child(2) {
+    flex-basis: 108px;
+    overflow-x: hidden;
+  }
+}
+
 .banner-section {
   height: 82vh;
   background: url(../images/banner.jpg);
